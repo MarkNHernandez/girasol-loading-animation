@@ -1,0 +1,60 @@
+:root {
+    --front-color: yellow;
+    --back-color: yellow;
+}
+
+body {
+    vertical-align: middle;
+    height: 100vh;
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    scale: 30 30;
+    transform: translate(200,200);
+}
+
+/* #front {
+    fill: var(--front-color);
+}
+
+#back { 
+    fill: var(--back-color);
+} */
+
+#front path {
+    opacity: 0;
+    stroke: #FAE033;
+    animation: girasolLoading 3.8s ease-in infinite;
+    animation-delay: calc(var(--order) * 50ms);
+}
+
+#back path {
+    opacity: 0;
+    stroke: #FAE033;
+    animation: girasolLoading 3.8s ease-in infinite;
+    animation-delay: calc(var(--order) * 50ms);
+}
+
+@keyframes girasolLoading {
+0%{
+    opacity: 0;
+}
+25%{
+    opacity: 0;
+}
+40%{
+    opacity: 0;
+}
+50%{
+    opacity: 100;
+}
+90%{
+    opacity: 100;
+}
+
+
+}
